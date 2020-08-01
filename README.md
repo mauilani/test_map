@@ -34,18 +34,18 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
  
  ### 4.index.htmlに実装する
  - 下記ガイドの通りに行います。
-　 [YOLPJavaScriptマップAPIからMapbox GL JSへの移行ガイド](https://docs.mapbox.com/jp/yolp-to-mapbox/javascript/)
+1. [YOLPJavaScriptマップAPIからMapbox GL JSへの移行ガイド](https://docs.mapbox.com/jp/yolp-to-mapbox/javascript/)
  
-  a. 地図を表示させるコンテナをdivタグとしてbody内に配置する。
+2. 地図を表示させるコンテナをdivタグとしてbody内に配置する。
 ```
 <div id='map'></div>
 ```
-  b. head内で以下をコピペする
+3. head内で以下をコピペする
 ```
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
 ```
-  c. body内に以下のJS<script>...</script>をコピペする
+4. body内に以下のJS<script>...</script>をコピペする
 ```
 <body>
     <div id='map'></div>    /* 1の設定  */
@@ -67,16 +67,16 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
     </script>
 </body>
 ```
-  d. 以上でコピペは完了
+5. 以上でコピペは完了
      同じ方法ですがステップごとに設定方法を説明しているページもあります。
      [インストール手順](https://www.mapbox.com/install/)
     (「JS web」を押下 =>「Use the Mapbox CDN」を押下してすすめる )
   
-  e. 各パラメータを書き換える　以下、5番以降の手順
+6. 各パラメータを書き換える　以下、5番以降の手順を実施する
   
   
   ## 5.取得したデフォルトアクセストークンに書き換える
-  - [Access tokens](https://account.mapbox.com/access-tokens/) のトークンの値をコピペします
+  - [Access tokens](https://account.mapbox.com/access-tokens/) のデフォルトトークンの値をコピペします
  
  **変更前**
  ```
@@ -164,7 +164,7 @@ zoom: 15
 
 2. いろいろカスタマイズできそう　https://docs.mapbox.com/jp/mapbox-gl-js/example/#sources
 
-. zoom 値について　https://docs.mapbox.com/help/glossary/zoom-level/
+ zoom 値について　https://docs.mapbox.com/help/glossary/zoom-level/
 
 
 
