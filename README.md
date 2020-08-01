@@ -97,15 +97,15 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
  ## 7. 地図を日本語表記に変換する　Style URL を変換する
 1. 「スタイル」ページに移動  https://studio.mapbox.com/
   
-- ページ右側のTools & resourcesの「Find inspiration in the style gallery」リンクを押下
+2. ページ右側のTools & resourcesの「Find inspiration in the style gallery」リンクを押下
 
-- https://www.mapbox.com/gallery/ に遷移したら、「Mapbox Streets Japan」を選択する
+3. https://www.mapbox.com/gallery/ に遷移したら、「Mapbox Streets Japan」を選択する
 　「explore →　」を押下
-- mapが表示され、左下にある「Add Mapbox Streets Japan to your account」を押下
-- 作成したアカウントで studio.mapbox ツールページへ遷移。東京駅辺りのマップが表示されます
-- 画面右上メニューバーにある「share...」を押下
-- share&develop 画面が表示され、Developer resources　の「StyleURL」と「Access token」を取得します
-- <script>内で記載した以下の箇所を、上記で取得したStyleURLに書き換えます
+4. mapが表示され、左下にある「Add Mapbox Streets Japan to your account」を押下
+5. 作成したアカウントで studio.mapbox ツールページへ遷移。東京駅辺りのマップが表示されます
+6. 画面右上メニューバーにある「share...」を押下
+7. share&develop 画面が表示され、Developer resources　の「StyleURL」と「Access token」を取得します
+8. <script>内で記載した以下の箇所を、上記で取得したStyleURLに書き換えます
  
  **変更前**
  ```
@@ -117,9 +117,9 @@ style: 'mapbox://styles/mapbox/streets-v11',
 /* 地図styleID。YOLPではLayerSetIdに相当する。*/
 style: 'mapbox://styles/mauilani/ckdba743a1c3k1imechwa99bh',
  ```
- - Access token は5番で設定した値と同じはず
+9. Access token は5番で設定した値と同じはず
  
- - 地図が日本語化されました
+10. 地図が日本語化されました
  
  ## 8.目的地を指定して表示させる
  - 現時点ではデフォルトの位置が表示されているため、表示させたい位置を設定します
