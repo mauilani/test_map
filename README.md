@@ -77,6 +77,7 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
   
   ## 5.取得したデフォルトアクセストークンに書き換える
   - [Access tokens](https://account.mapbox.com/access-tokens/) のトークンの値をコピペします
+ 
  **変更前**
  ```
   /* アクセストークンの設定 */
@@ -94,17 +95,18 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
  
  ## 7. 地図を日本語表記に変換する　Style URL を変換する
 -「スタイル」ページに移動
-  [Styles](https://studio.mapbox.com/)
+  https://studio.mapbox.com/
   
 - ページ右側のTools & resourcesの「Find inspiration in the style gallery」リンクを押下
 
 - https://www.mapbox.com/gallery/ に遷移したら、「Mapbox Streets Japan」を選択する
 　「explore →　」を押下
 - mapが表示され、左下にある「Add Mapbox Streets Japan to your account」を押下
-- 作成したアカウントで「https://studio.mapbox.com」　　遷移。東京駅辺りのマップが表示されます
+- 作成したアカウントで studio.mapbox ツールページへ遷移。東京駅辺りのマップが表示されます
 - 画面右上メニューバーにある「share...」を押下
 - share&develop 画面が表示され、Developer resources　の「StyleURL」と「Access token」を取得します
 - <script>内で記載した以下の箇所を、上記で取得したStyleURLに書き換えます
+ 
  **変更前**
  ```
 /* 地図styleID。YOLPではLayerSetIdに相当する。*/
@@ -117,7 +119,49 @@ style: 'mapbox://styles/mauilani/ckdba743a1c3k1imechwa99bh',
  ```
  - Access token は5番で設定した値と同じはず
  
+ - 地図が日本語化されました
  
+ ## 8.目的地を指定して表示させる
+ - 現時点ではデフォルトの位置が表示されているため、表示させたい位置を設定します
+ - コーポレートサイトのhtmlソースを表示してJSの中からそれらしい値を探します
+ - center の値を目的地の値に変更します
+ 
+  **変更前**
+ ```
+/* 地図の初期緯度経度[lng,lat] */
+center: [-74.50, 40],
+ ```
+  **変更後**
+ ```
+/* 地図の初期緯度経度[lng,lat] */
+center: [139.73301982756823, 35.677234699999985],
+ ```
+## 9. zoomの設定
+- zoomの値を変更して表示を調整します。
+
+**初期値**
+```
+/* 地図の初期ズームレベル */
+zoom: 9
+```
+**変更後**
+```
+/* 地図の初期ズームレベル */
+zoom: 15
+```
+ お好みで
+ 
+ ## 10. 所在地をマークで指定する
+ - 以下を<script>内に追加します
+ ```
+ var marker = new mapboxgl.Marker()
+        .setLngLat([139.73301982756823, 35.677234699999985])
+        .addTo(map);
+ 
+ ```
+ 
+## 11. 基本設定は完了
+
 
 
 
