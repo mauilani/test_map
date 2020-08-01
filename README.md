@@ -41,7 +41,7 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
 ```
 <div id='map'></div>
 ```
-  b. head内でmapbox-gl.jsとmapbox-gl.cssを読み込む。
+  b. head内で以下をコピペする
 ```
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
@@ -95,8 +95,7 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
  
  
  ## 7. 地図を日本語表記に変換する　Style URL を変換する
--「スタイル」ページに移動
-  https://studio.mapbox.com/
+1. 「スタイル」ページに移動  https://studio.mapbox.com/
   
 - ページ右側のTools & resourcesの「Find inspiration in the style gallery」リンクを押下
 
