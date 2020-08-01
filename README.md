@@ -22,6 +22,7 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
 - アカウントを作成する。
     [Mapbox アカウント作成画面](https://account.mapbox.com/auth/signup/)
 
+
 ### 3.アクセストークンを取得する
 - アカウント作成時にデフォルトのアクセストークンが作成されている
     [Access tokens](https://account.mapbox.com/access-tokens/)
@@ -29,7 +30,8 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
     
     他資料
     [トークンやスコープについて](https://docs.mapbox.com/accounts/overview/tokens/#scopes)
-    
+ 
+ 
  ### 4.index.htmlに実装する
  - 下記ガイドの通りに行います。
 　 [YOLPJavaScriptマップAPIからMapbox GL JSへの移行ガイド](https://docs.mapbox.com/jp/yolp-to-mapbox/javascript/)
@@ -72,6 +74,7 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
   
   e. 各パラメータを書き換える　以下、5番以降の手順
   
+  
   ## 5.取得したデフォルトアクセストークンに書き換える
   - [Access tokens](https://account.mapbox.com/access-tokens/) のトークンの値をコピペします
  **変更前**
@@ -85,12 +88,16 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
   mapboxgl.accessToken = 'pk.eyJ1IjoibWF1aWxhbmkiL**********************';
  ```
  
+ 
  ## 6.container: 'map'  はdiv id='map'で指定したとおりで同じ
+ 
  
  ## 7. 地図を日本語表記に変換する　Style URL を変換する
 -「スタイル」ページに移動
   [Styles](https://studio.mapbox.com/)
+  
 - ページ右側のTools & resourcesの「Find inspiration in the style gallery」リンクを押下
+
 - https://www.mapbox.com/gallery/ に遷移したら、「Mapbox Streets Japan」を選択する
 　「explore →　」を押下
 - mapが表示され、左下にある「Add Mapbox Streets Japan to your account」を押下
@@ -108,7 +115,9 @@ style: 'mapbox://styles/mapbox/streets-v11',
 /* 地図styleID。YOLPではLayerSetIdに相当する。*/
 style: 'mapbox://styles/mauilani/ckdba743a1c3k1imechwa99bh',
  ```
-
+ - Access token は5番で設定した値と同じはず
+ 
+ 
 
 
 
