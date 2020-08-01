@@ -122,9 +122,9 @@ style: 'mapbox://styles/mauilani/ckdba743a1c3k1imechwa99bh',
 10. 地図が日本語化されました
  
  ## 8.目的地を指定して表示させる
- - 現時点ではデフォルトの位置が表示されているため、表示させたい位置を設定します
- - コーポレートサイトのhtmlソースを表示してJSの中からそれらしい値を探します
- - center の値を目的地の値に変更します
+ 1. 現時点ではデフォルトの位置が表示されているため、表示させたい位置を設定します
+ 2. コーポレートサイトのhtmlソースを表示してJSの中からそれらしい値を探します
+ 3. center の値を目的地の値に変更します
  
   **変更前**
  ```
@@ -137,8 +137,8 @@ center: [-74.50, 40],
 center: [139.73301982756823, 35.677234699999985],
  ```
 ## 9. zoomの設定
-- zoomの値を変更して表示を調整します。
-
+1. zoomの値を変更して表示を調整します。
+2. zoom 値について　https://docs.mapbox.com/help/glossary/zoom-level/
 **初期値**
 ```
 /* 地図の初期ズームレベル */
@@ -160,7 +160,14 @@ zoom: 15
  
  ```
  
-## 11. 基本設定は完了
+## 11. 基本設定は完了　その他
+1. Mapboxを安全に使用する  https://docs.mapbox.com/jp/help/troubleshooting/how-to-use-mapbox-securely/
+
+2. いろいろカスタマイズできそう　https://docs.mapbox.com/jp/mapbox-gl-js/example/#sources
+
+. zoom 値について　https://docs.mapbox.com/help/glossary/zoom-level/
+
+
 
 
 
