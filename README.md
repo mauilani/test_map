@@ -6,7 +6,8 @@ TOPページにMapboxを使って地図を表示するまでの実装方法の�
 ### 参考サイト
 
 - Mapbox
- 　[Mapbox Top](https://www.mapbox.jp/
+ 　[Mapbox Top](https://www.mapbox.jp/)
+  
 　 [YOLPJavaScriptマップAPIからMapbox GL JSへの移行ガイド](https://docs.mapbox.com/jp/yolp-to-mapbox/javascript/)
 
    [Mapbox GL JS クイックスタート](https://docs.mapbox.com/mapbox-gl-js/api/)
